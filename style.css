@@ -57,7 +57,7 @@
     font-size: 30px;
     text-align: center;
     margin-top: 50px;
-    font-family: brush script mt;
+    font-family: "Alex Brush", serif;
 }
 
 .header-btn {
@@ -160,8 +160,9 @@
         font-size: 15px;
     }
     #title-header .tagLine{
-        font-size: 20px;
-        font-family: brush script mt;
+        font-size: 25px;
+        font-family: "Alex Brush", serif;
+        
     }
     .header-btn a{
         display: block;
