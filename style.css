@@ -101,11 +101,12 @@
     width: 200px;
     height: 100vh;
     position: fixed;
-    right: 0;
+    right: -250px;
     top: 0;
     background: #343131;
     padding: 10px;
     z-index: 2;
+    transition: 0.5s;
 }
 
 #sideNav nav ul li{
@@ -148,3 +149,22 @@
     margin-top: 15px;
 }
 
+@media screen and (max-width: 400px){
+    #title-header h1{
+        font-size: 40px;
+    }
+    #title-header h2{
+        font-size: 20px;
+    }
+    #title-header p{
+        font-size: 15px;
+    }
+    #title-header .tagLine{
+        font-size: 20px;
+    }
+    .header-btn a{
+        display: block;
+        margin: 10px auto;
+        font-size: 10px;
+    }
+}
