@@ -23,7 +23,7 @@
 }
 
 #title-header {
-   background-color: rgba(0, 0, 0, 0.65);
+   background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     width: 60%;
     height: 100vh;
@@ -151,7 +151,7 @@
 
 @media screen and (max-width: 450px){
     #title-header {
-        background-color: rgba(0, 0, 0, 0.65);
+        background-color: rgba(0, 0, 0, 0.8);
          position: absolute;
          width: 75%;
          height: 100vh;
@@ -195,6 +195,7 @@
     width: 50%;
     height: 50vh;
     padding: 100px 50px;
+    opacity: 0.9;
 }
 .aboutUs h1{
     color: #D8A25E;
@@ -248,7 +249,7 @@
 
  @media screen and (max-width: 450px){
     .aboutUs {
-        background-color: #343131;
+        background-color: #000;
         width: 100%;
         height: 40vh;
         padding: 50px 0px;
