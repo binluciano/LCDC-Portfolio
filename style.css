@@ -363,3 +363,25 @@ hr{
     bottom: 40%;
     opacity: 1;
 }
+
+@media screen and (max-width: 450px){
+
+    .services h1{   
+        color: #D8A25E;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Alex Brush", serif;
+    }
+
+    .offers{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .offers p{
+        font-size: 10px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+}
