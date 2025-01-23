@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
     <title>LCDC Website</title>
 </head>
 <body>
@@ -15,10 +16,45 @@
             <h2>Construction<br> and Development Corp.</h2>
             <p>An up and coming industry player borne out of passion <br> for design and construction.</p>
             <p class="tagLine">Concepts to Creation</p>
-
+            <div class="header-btn">
+                <a href="about.html"><span></span>About Us</a>
+                <a href="contact.html"><span></span>Contact Us</a>
+            </div>
        </div>
-
     </section>
+   
+    <!---------------- Navigation Bar --------------------->
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+<div id="menuBtn">
+    <i class="fas fa-bars" id="menu"></i>
+</div>
+
+<!----------------- Java for Menu Button ------------------->
+<script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+        }
+        else{
+            sideNav.style.right = "-250px";
+        }
+    }
+</script>
+
 
 
 

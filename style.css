@@ -11,7 +11,7 @@
     background-image: url(images/wallpaper.jpeg);
     background-position: center;
     background-size: cover;
-    position: absolute;
+    position: relative;
 }
 
 .logo {
@@ -35,8 +35,7 @@
     color: #D8A25E;
     font-size: 60px;
     text-align: center;
-    margin-top: 300px;
-    top: 50%;
+    margin-top: 250px;
 }
 #title-header h2 {
     color: white;
@@ -60,3 +59,92 @@
     margin-top: 50px;
     font-family: brush script mt;
 }
+
+.header-btn {
+   margin: 70px auto 0;
+   text-align: center;
+}
+
+.header-btn a {
+   width: 100px;
+   text-decoration: none;
+   display: inline-block;
+   margin: 0 10px;
+   padding: 12px 0;
+   color: white;
+   border: #D8A25E 1px solid;
+   text-align: center;
+   font-size: small;
+   position: relative;
+   z-index: 1;
+}
+
+.header-btn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #D8A25E;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.header-btn a:hover span{
+    width: 100%;
+}
+.header-btn a:hover{
+    color: #000;
+}
+
+#sideNav{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #343131;
+    padding: 10px;
+    z-index: 2;
+}
+
+#sideNav nav ul li{
+   list-style: none;
+    margin: 50px 20px;
+}
+
+#sideNav nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#sideNav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #D8A25E;
+    display: block;
+    margin: auto;
+}
+#sideNav ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+#menuBtn{
+   width: 50px;
+   height: 50px;
+   background: #343131;
+   text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn i{
+    color: #D8A25E;
+    margin-top: 15px;
+}
+
